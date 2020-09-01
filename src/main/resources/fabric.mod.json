@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "hotbarswitcher",
+  "version": "${version}",
+
+  "name": "Hotbar Switcher",
+  "description": "Easily transfer items between your inventory and your hotbar.",
+  "authors": [
+    "MaroonAngel"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/hotbar-switcher",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/hotbarswitcher/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.maroonangel.hotbarswitcher.HBS::init"
+    ]
+  },
+  "mixins": [
+    "hotbarswitcher.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
