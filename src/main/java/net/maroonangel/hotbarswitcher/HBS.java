@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier;
 
 public class HBS {
 
-	public static KeyBinding switchKey = createKeyBinding(new Identifier("hotbarswitcher", "swap"), InputUtil.Type.KEYSYM, -1, "key.hotbarswitcher.category");
+	public static KeyBinding switchKey = createKeyBinding(new Identifier("hotbarswitcher", "swap"), InputUtil.Type.KEYSYM, 82, "key.hotbarswitcher.category");
 
 	public void init() {
 

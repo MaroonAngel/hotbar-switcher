@@ -28,3 +28,7 @@ bin/
 
 run/
 logs/
+
+# misc
+backup/
+remappedSrc/
