@@ -9,6 +9,10 @@ classes/
 
 *.launch
 
+# macos
+
+*.DS_Store
+
 # idea
 
 .idea/

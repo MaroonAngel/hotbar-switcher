@@ -28,7 +28,7 @@ public abstract class InGameHudMixin extends DrawableHelper {
     public void tick(final CallbackInfo info) {
         ClientPlayerEntity player = MinecraftClient.getInstance().player;
         if (player != null) {
-            inventory = player.method_31548();
+            inventory = player.getInventory();
             if (inventory != null && HBS.switchKey.wasPressed() && !Screen.hasControlDown()) {
                 if (Screen.hasShiftDown()) {
                     int selectedSlot = inventory.selectedSlot;
