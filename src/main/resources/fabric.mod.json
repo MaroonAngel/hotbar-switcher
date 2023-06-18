@@ -1,34 +1,31 @@
 {
-  "schemaVersion": 1,
-  "id": "hotbarswitcher",
-  "version": "${version}",
-
-  "name": "Hotbar Switcher",
-  "description": "Easily transfer items between your inventory and your hotbar.",
-  "authors": [
-    "MaroonAngel"
-  ],
-  "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/hotbar-switcher",
-    "sources": "https://github.com/MaroonAngel/hotbar-switcher"
-  },
-
-  "license": "CC0-1.0",
-  "icon": "assets/hotbarswitcher/icon.png",
-
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "net.maroonangel.hotbarswitcher.HBS::init"
-    ]
-  },
-  "mixins": [
-    "hotbarswitcher.mixins.json"
-  ],
-
-  "depends": {
-    "fabricloader": ">=0.14.6",
-    "fabric": "*",
-    "minecraft": "~1.19"
-  }
+	"schemaVersion": 1,
+	"id": "hotbarswitcher",
+	"version": "${version}",
+	"name": "Hotbar Switcher",
+	"description": "Easily transfer items between your inventory and your hotbar.",
+	"authors": [
+		"MaroonAngel"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/hotbar-switcher",
+		"sources": "https://github.com/MaroonAngel/hotbar-switcher"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/hotbarswitcher/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.maroonangel.hotbarswitcher.HBS::init"
+		]
+	},
+	"mixins": [
+		"hotbarswitcher.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
 }

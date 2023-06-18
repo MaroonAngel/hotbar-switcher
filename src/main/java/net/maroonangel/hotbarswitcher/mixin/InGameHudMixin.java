@@ -1,8 +1,9 @@
 package net.maroonangel.hotbarswitcher.mixin;
 
-import net.maroonangel.hotbarswitcher.HBS;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.DrawableHelper;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.maroonangel.hotbarswitcher.HBS;
 import net.minecraft.client.gui.hud.InGameHud;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.network.ClientPlayerEntity;
@@ -15,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(InGameHud.class)
-public abstract class InGameHudMixin extends DrawableHelper {
+public abstract class InGameHudMixin {
 
     @Unique
     private static PlayerInventory inventory;
