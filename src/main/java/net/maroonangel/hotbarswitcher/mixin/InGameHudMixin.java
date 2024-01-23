@@ -26,7 +26,7 @@ public abstract class InGameHudMixin {
         ClientPlayerEntity player = MinecraftClient.getInstance().player;
         if (player != null) {
             inventory = player.getInventory();
-            if (inventory != null && HBS.switchKey.wasPressed() && !Screen.hasControlDown()) {
+            if (inventory != null && HBS.switchKey.wasPressed()) {
                 if (Screen.hasShiftDown()) {
                     int selectedSlot = inventory.selectedSlot;
                     int top = selectedSlot + 9;
