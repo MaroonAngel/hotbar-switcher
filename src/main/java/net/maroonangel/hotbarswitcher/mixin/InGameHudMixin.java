@@ -17,30 +17,30 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(InGameHud.class)
 public abstract class InGameHudMixin {
-
     @Unique
     private static PlayerInventory inventory;
 
     @Inject(method = "tick", at = @At("RETURN"))
     public void tick(final CallbackInfo info) {
-        ClientPlayerEntity player = MinecraftClient.getInstance().player;
+        MinecraftClient mc = MinecraftClient.getInstance();
+        ClientPlayerEntity player = mc.player;
         if (player != null) {
             inventory = player.getInventory();
-            if (inventory != null && HBS.switchKey.wasPressed() && !Screen.hasControlDown()) {
-                if (Screen.hasShiftDown()) {
-                    int selectedSlot = inventory.selectedSlot;
+            if (inventory != null && HBS.switchKey.wasPressed() && !mc.isCtrlPressed()) {
+                if (mc.isShiftPressed()) {
+                    int selectedSlot = ((PlayerInventoryAccessor) inventory).getSelectedSlot();
                     int top = selectedSlot + 9;
                     int mid = top + 9;
                     int bot = mid + 9;
 
-                    MinecraftClient.getInstance().interactionManager.clickSlot(0, top, selectedSlot, SlotActionType.SWAP, player);
-                    MinecraftClient.getInstance().interactionManager.clickSlot(0, mid, selectedSlot, SlotActionType.SWAP, player);
-                    MinecraftClient.getInstance().interactionManager.clickSlot(0, bot, selectedSlot, SlotActionType.SWAP, player);
+                    mc.interactionManager.clickSlot(0, top, selectedSlot, SlotActionType.SWAP, player);
+                    mc.interactionManager.clickSlot(0, mid, selectedSlot, SlotActionType.SWAP, player);
+                    mc.interactionManager.clickSlot(0, bot, selectedSlot, SlotActionType.SWAP, player);
                 } else {
-                    int selectedSlot = inventory.selectedSlot;
+                    int selectedSlot = ((PlayerInventoryAccessor) inventory).getSelectedSlot();
                     int topSlot = selectedSlot + 27;
 
-                    MinecraftClient.getInstance().interactionManager.clickSlot(0, topSlot, selectedSlot, SlotActionType.SWAP, player);
+                    mc.interactionManager.clickSlot(0, topSlot, selectedSlot, SlotActionType.SWAP, player);
                 }
             }
         }
