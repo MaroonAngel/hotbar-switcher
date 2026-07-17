@@ -1,15 +1,15 @@
 {
 	"schemaVersion": 1,
-	"id": "hotbarswitcher",
+	"id": "hotbar-switcher-reborn",
 	"version": "${version}",
-	"name": "Hotbar Switcher",
-	"description": "Easily transfer items between your inventory and your hotbar.",
+	"name": "Hotbar Switcher Reborn",
+	"description": "Easily transfer a single item between your inventory and your hotbar",
 	"authors": [
-		"MaroonAngel"
+		"magicus", "MaroonAngel"
 	],
 	"contact": {
-		"homepage": "https://www.curseforge.com/minecraft/mc-mods/hotbar-switcher",
-		"sources": "https://github.com/MaroonAngel/hotbar-switcher"
+		"homepage": "https://github.com/magicus/hotbar-switcher-reborn",
+		"sources": "https://github.com/magicus/hotbar-switcher-reborn"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/hotbarswitcher/icon.png",
