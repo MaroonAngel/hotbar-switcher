@@ -1,12 +1,16 @@
-# Hotbar Switcher
+# Hotbar Switcher Reborn
 
-Hello! Hotbar Switcher is a simple fabric mod that lets you transfer items between your hotbar and the bottom row of your inventory. Pressing a hotkey swaps the currently selected hotbar item with the one directly above it in the inventory. This is especially useful if you keep handy items on the bottom row of your inventory, like so:  
+This is a fork of https://github.com/MaroonAngel/hotbar-switcher. The original author has unfortunately stopped updating the mod.
 
-![Inventory](https://i.imgur.com/wNs1RJo.png)
+---
+
+Hotbar Switcher Reborn is a simple fabric mod that lets you transfer items between your hotbar and the bottom row of your inventory. Pressing a hotkey swaps the currently selected hotbar item with the one directly above it in the inventory. This is especially useful if you keep handy items on the bottom row of your inventory, like so:
+
+![Inventory](docs/inventory.png)
 
 You'll have to set the keybinding in the controls page. If you hold shift while pressing the hotkey, it'll cycle items from the column above the hotbar slot. If you find any bugs, feel free to comment or open an issue on the github page. Here's a gif of the mod in action:
 
-![](https://i.imgur.com/ImMGAF7.gif)
+![](docs/animation.gif)
 
 Requires [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api).
  
