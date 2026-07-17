@@ -1,3 +1,7 @@
+**This project is no longer updated**
+
+Please see the fork at https://github.com/magicus/hotbar-switcher-reborn for an up-to-date version of the mod.
+
 # Hotbar Switcher
 
 Hello! Hotbar Switcher is a simple fabric mod that lets you transfer items between your hotbar and the bottom row of your inventory. Pressing a hotkey swaps the currently selected hotbar item with the one directly above it in the inventory. This is especially useful if you keep handy items on the bottom row of your inventory, like so:  
