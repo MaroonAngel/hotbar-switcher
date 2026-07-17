@@ -32,7 +32,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
 
       - name: Build with Gradle
-        run: ./gradlew jar
+        run: ./gradlew build
 
       - name: Get version numbers from tag
         id: version
@@ -73,7 +73,7 @@ jobs:
 
       - name: Publish release
         id: publish
-        uses: Kir-Antipov/mc-publish@v3.3
+        uses: Kira-NT/mc-publish@v3.3
         with:
           modrinth-id: ${{ env.MODRINTH_ID }}
           curseforge-id: ${{ env.CURSEFORGE_ID }}
